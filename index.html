@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Barbería clásica y moderna en Quilmes">
+<meta name="keywords" content="barbería, Quilmes, corte, barba, afeitado">
+<meta property="og:title" content="Barbería El Navarrete — Barber�a El Navarrete">
+<meta property="og:description" content="Barbería clásica y moderna en Quilmes">
+<meta property="og:image" content="https://source.unsplash.com/1920x900/?barber%2C%20haircut%2C%20style">
+<title>Barbería El Navarrete — Barber�a El Navarrete</title>
+<link rel="preconnect" href="https://source.unsplash.com">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1e293b;background:#fff;line-height:1.65}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:100%;object-fit:cover}
+h1,h2,h3,h4{line-height:1.15;font-weight:800}
+.wrap{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.sec{padding:5.5rem 0}
+.sec-sm{padding:3rem 0}
+.badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(26,26,46,0.1);color:#1a1a2e;
+  font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;
+  padding:.35rem 1rem;border-radius:9999px;margin-bottom:1.25rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font-weight:700;font-size:1rem;padding:.875rem 2rem;border-radius:9999px;
+  cursor:pointer;transition:opacity .2s,transform .15s;border:none;line-height:1;white-space:nowrap}
+.btn:hover{opacity:.9;transform:translateY(-2px)}
+.btn-p{background:#1a1a2e;color:#fff}
+.btn-o{background:transparent;color:#1a1a2e;border:2px solid #1a1a2e}
+.btn-w{background:#fff;color:#1a1a2e}
+.card{background:#fff;border-radius:1.25rem;padding:2rem;
+  border:1px solid #e8edf3;transition:box-shadow .25s,transform .25s}
+.card:hover{box-shadow:0 12px 40px rgba(0,0,0,.09);transform:translateY(-3px)}
+.tc{text-align:center}
+.stitle{font-size:clamp(1.8rem,3.5vw,2.6rem);color:#0f172a;margin-bottom:.75rem}
+.ssub{font-size:1.05rem;color:#64748b;max-width:580px;margin:0 auto;line-height:1.7}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.g2x3{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+@media(max-width:960px){.g2{grid-template-columns:1fr;gap:2.5rem}.g3{grid-template-columns:1fr 1fr}.g4{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.g3,.g4,.g2x3{grid-template-columns:1fr}.sec{padding:3.5rem 0}.btn{padding:.75rem 1.5rem;font-size:.95rem}}
+/* FAQ */
+.faq-item{border-bottom:1px solid #e8edf3}
+.faq-btn{display:flex;justify-content:space-between;align-items:center;width:100%;background:none;border:none;text-align:left;padding:1.25rem 0;cursor:pointer;font-size:1rem;font-weight:600;color:#0f172a;gap:1rem}
+.faq-btn .ico{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:rgba(26,26,46,0.1);color:#1a1a2e;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:transform .3s}
+.faq-body{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}
+.faq-body p{color:#475569;line-height:1.75;font-size:.95rem;padding-bottom:1.25rem}
+.faq-item.open .ico{transform:rotate(45deg)}
+.faq-item.open .faq-body{max-height:300px}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:.75rem}
+.gallery-grid img{width:100%;height:240px;object-fit:cover;border-radius:.875rem;transition:opacity .25s}
+.gallery-grid img:hover{opacity:.9}
+@media(max-width:640px){.gallery-grid{grid-template-columns:1fr 1fr}}
+/* Mobile nav */
+#m-nav{display:none;padding:1rem 1.5rem;flex-direction:column;gap:.25rem;background:#fff;border-top:1px solid #e8edf3}
+#m-nav a{display:block;padding:.75rem 1rem;border-radius:.625rem;font-weight:500;color:#0f172a}
+@media(max-width:768px){#hamburger{display:flex !important}.desktop-links{display:none !important}#m-nav.open{display:flex!important}}
+</style>
+
+</head><body>
+<nav style="position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.06)">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:70px">
+    <a href="index.html" style="font-size:1.2rem;font-weight:800;color:#1a1a2e;letter-spacing:-.02em">Barber�a El Navarrete</a>
+    <div class="desktop-links" style="display:flex;align-items:center;gap:.125rem">
+      <a href="index.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(26,26,46,0.1)';this.style.color='#1a1a2e'" onmouseout="this.style.background='';this.style.color='#475569'">Inicio</a><a href="services.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(26,26,46,0.1)';this.style.color='#1a1a2e'" onmouseout="this.style.background='';this.style.color='#475569'">Servicios</a><a href="gallery.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(26,26,46,0.1)';this.style.color='#1a1a2e'" onmouseout="this.style.background='';this.style.color='#475569'">Galería</a><a href="about.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(26,26,46,0.1)';this.style.color='#1a1a2e'" onmouseout="this.style.background='';this.style.color='#475569'">Nosotros</a><a href="faq.html" style="color:#475569;font-size:.875rem;padding:.5rem .875rem;border-radius:.5rem;font-weight:500;transition:color .2s,background .2s" onmouseover="this.style.background='rgba(26,26,46,0.1)';this.style.color='#1a1a2e'" onmouseout="this.style.background='';this.style.color='#475569'">FAQ</a><a href="contact.html" class="btn btn-p" style="padding:.5rem 1.25rem;font-size:.875rem">Contacto</a>
+    </div>
+    <button id="hamburger" onclick="document.getElementById('m-nav').classList.toggle('open')"
+      style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem" aria-label="Menú">
+      <span style="display:block;width:22px;height:2px;background:#1e293b;border-radius:2px;transition:transform .3s"></span>
+      <span style="display:block;width:22px;height:2px;background:#1e293b;border-radius:2px;transition:opacity .3s"></span>
+      <span style="display:block;width:22px;height:2px;background:#1e293b;border-radius:2px;transition:transform .3s"></span>
+    </button>
+  </div>
+  <div id="m-nav">
+    <a href="index.html">Inicio</a><a href="services.html">Servicios</a><a href="gallery.html">Galería</a><a href="about.html">Nosotros</a><a href="faq.html">FAQ</a><a href="contact.html" style="background:#1a1a2e;color:#fff;text-align:center;border-radius:.625rem;padding:.875rem">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO con imagen de fondo -->
+<section style="position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden">
+  <img src="https://source.unsplash.com/1920x900/?barber%2C%20haircut%2C%20style" alt="Barber�a El Navarrete" loading="eager"
+    style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,26,46,.88) 0%,rgba(10,15,35,.8) 100%)"></div>
+  <div class="wrap" style="position:relative;z-index:2;color:#fff;padding-top:3rem;padding-bottom:3rem">
+    <div class="badge" style="background:rgba(255,255,255,.18);color:#fff;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)">✦ 8 años de experiencia</div>
+    <h1 style="font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;line-height:1.05;margin-bottom:1.5rem;max-width:820px;color:#fff">
+      Cortes y barbas perfectas
+    </h1>
+    <p style="font-size:clamp(1rem,2.2vw,1.3rem);opacity:.9;max-width:580px;margin-bottom:2.5rem;line-height:1.7">
+      En Barbería El Navarrete, ofrecemos cortes clásicos y modernos, degradados y arreglo de barba, con productos premium y técnicas de vanguardia.
+    </p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+      <a href="contact.html" class="btn btn-w">Reservar ahora →</a>
+      <a href="services.html" style="display:inline-flex;align-items:center;gap:.5rem;border:2px solid rgba(255,255,255,.55);color:#fff;padding:.875rem 2rem;border-radius:9999px;font-weight:700;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)">Conocer más</a>
+    </div>
+    <p style="margin-top:2.75rem;opacity:.75;font-size:.875rem;display:flex;align-items:center;gap:.5rem"><span style="color:#fbbf24">⭐⭐⭐⭐⭐</span> Más de 500 clientes satisfechos</p>
+  </div>
+</section>
+
+
+<!-- STATS BAR -->
+<section style="background:#1a1a2e;padding:2.75rem 0">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center">
+      
+      <div style="border-right:1px solid rgba(255,255,255,.2)">
+        <p style="font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;color:#fff;line-height:1">8+</p>
+        <p style="color:rgba(255,255,255,.8);font-size:.875rem;margin-top:.35rem">Años de experiencia</p>
+      </div>
+      <div style="border-right:1px solid rgba(255,255,255,.2)">
+        <p style="font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;color:#fff;line-height:1">500+</p>
+        <p style="color:rgba(255,255,255,.8);font-size:.875rem;margin-top:.35rem">Clientes satisfechos</p>
+      </div>
+      <div style="border-right:1px solid rgba(255,255,255,.2)">
+        <p style="font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;color:#fff;line-height:1">98%</p>
+        <p style="color:rgba(255,255,255,.8);font-size:.875rem;margin-top:.35rem">Recomendación</p>
+      </div>
+      <div>
+        <p style="font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;color:#fff;line-height:1">24hs</p>
+        <p style="color:rgba(255,255,255,.8);font-size:.875rem;margin-top:.35rem">Tiempo de respuesta</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="sec" style="background:#fff">
+  <div class="wrap">
+    <div class="tc" style="margin-bottom:3.5rem">
+      <div class="badge">✦ Por qué elegirnos</div>
+      <h2 class="stitle">¿Por qué elegirnos?</h2>
+      <p class="ssub">Nuestros servicios y productos de alta calidad</p>
+    </div>
+    <div class="g3">
+      
+      <div class="card" style="border-top:3px solid #1a1a2e">
+        <div style="font-size:2.25rem;margin-bottom:1rem">⭐</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:#0f172a;margin-bottom:.5rem">Experiencia y profesionalismo</h3>
+        <p style="color:#64748b;font-size:.9rem;line-height:1.75">Nuestros barberos tienen más de 8 años de experiencia y se actualizan constantemente en las últimas tendencias.</p>
+      </div>
+      <div class="card" style="border-top:3px solid #1a1a2e">
+        <div style="font-size:2.25rem;margin-bottom:1rem">🔧</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:#0f172a;margin-bottom:.5rem">Técnicas de vanguardia</h3>
+        <p style="color:#64748b;font-size:.9rem;line-height:1.75">Utilizamos las últimas técnicas y herramientas para ofrecer cortes y barbas perfectas.</p>
+      </div>
+      <div class="card" style="border-top:3px solid #1a1a2e">
+        <div style="font-size:2.25rem;margin-bottom:1rem">💎</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:#0f172a;margin-bottom:.5rem">Productos premium</h3>
+        <p style="color:#64748b;font-size:.9rem;line-height:1.75">Utilizamos solo los mejores productos para asegurarnos de que nuestros clientes reciban el mejor tratamiento.</p>
+      </div>
+      <div class="card" style="border-top:3px solid #1a1a2e">
+        <div style="font-size:2.25rem;margin-bottom:1rem">🚀</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:#0f172a;margin-bottom:.5rem">Innovación y creatividad</h3>
+        <p style="color:#64748b;font-size:.9rem;line-height:1.75">Nuestros barberos están siempre dispuestos a innovar y crear nuevos estilos y tendencias.</p>
+      </div>
+      <div class="card" style="border-top:3px solid #1a1a2e">
+        <div style="font-size:2.25rem;margin-bottom:1rem">🛡️</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:#0f172a;margin-bottom:.5rem">Higiene y seguridad</h3>
+        <p style="color:#64748b;font-size:.9rem;line-height:1.75">La higiene y la seguridad son fundamentales para nosotros, por lo que seguimos estrictos protocolos para garantizar la salud y el bienestar de nuestros clientes.</p>
+      </div>
+      <div class="card" style="border-top:3px solid #1a1a2e">
+        <div style="font-size:2.25rem;margin-bottom:1rem">❤️</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:#0f172a;margin-bottom:.5rem">Atención personalizada</h3>
+        <p style="color:#64748b;font-size:.9rem;line-height:1.75">Cada cliente es único y especial para nosotros, por lo que nos esforzamos por ofrecer una atención personalizada y amigable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="sec" style="background:#f8fafc">
+  <div class="wrap">
+    <div class="tc" style="margin-bottom:3.5rem">
+      <div class="badge">✦ Testimonios</div>
+      <h2 class="stitle">Lo que dicen nuestros clientes</h2>
+    </div>
+    <div class="g3">
+      
+      <div class="card">
+        <p style="color:#fbbf24;font-size:1rem;margin-bottom:1rem">★★★★★</p>
+        <blockquote style="color:#475569;font-style:italic;line-height:1.75;font-size:.95rem;margin-bottom:1.5rem">
+          "Me encanta cómo me tratan en Barbería El Navarrete. Siempre me siento como en casa."
+        </blockquote>
+        <div style="display:flex;align-items:center;gap:.75rem">
+          <div style="width:42px;height:42px;border-radius:50%;background:rgba(26,26,46,0.1);display:flex;align-items:center;justify-content:center;font-weight:800;color:#1a1a2e;font-size:1.1rem;flex-shrink:0">J</div>
+          <div>
+            <p style="font-weight:700;color:#0f172a;font-size:.9rem">Juan Pérez</p>
+            <p style="color:#94a3b8;font-size:.8rem">Cliente desde 2018</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <p style="color:#fbbf24;font-size:1rem;margin-bottom:1rem">★★★★★</p>
+        <blockquote style="color:#475569;font-style:italic;line-height:1.75;font-size:.95rem;margin-bottom:1.5rem">
+          "La atención al detalle es impresionante. Me han cortado el pelo y la barba varias veces y siempre estoy satisfecho."
+        </blockquote>
+        <div style="display:flex;align-items:center;gap:.75rem">
+          <div style="width:42px;height:42px;border-radius:50%;background:rgba(26,26,46,0.1);display:flex;align-items:center;justify-content:center;font-weight:800;color:#1a1a2e;font-size:1.1rem;flex-shrink:0">C</div>
+          <div>
+            <p style="font-weight:700;color:#0f172a;font-size:.9rem">Carlos López</p>
+            <p style="color:#94a3b8;font-size:.8rem">Cliente desde 2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <p style="color:#fbbf24;font-size:1rem;margin-bottom:1rem">★★★★★</p>
+        <blockquote style="color:#475569;font-style:italic;line-height:1.75;font-size:.95rem;margin-bottom:1.5rem">
+          "La higiene y la seguridad son fundamentales para mí, y Barbería El Navarrete siempre cumple con mis expectativas."
+        </blockquote>
+        <div style="display:flex;align-items:center;gap:.75rem">
+          <div style="width:42px;height:42px;border-radius:50%;background:rgba(26,26,46,0.1);display:flex;align-items:center;justify-content:center;font-weight:800;color:#1a1a2e;font-size:1.1rem;flex-shrink:0">M</div>
+          <div>
+            <p style="font-weight:700;color:#0f172a;font-size:.9rem">María Rodríguez</p>
+            <p style="color:#94a3b8;font-size:.8rem">Cliente desde 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- GALERÍA (preview) -->
+<section class="sec" style="background:#fff">
+  <div class="wrap">
+    <div class="tc" style="margin-bottom:3rem">
+      <div class="badge">✦ Galería</div>
+      <h2 class="stitle">Nuestro trabajo</h2>
+    </div>
+    <div class="gallery-grid">
+      
+      <div style="position:relative;border-radius:.875rem;overflow:hidden;aspect-ratio:4/3">
+        <img src="https://source.unsplash.com/800x600/?corte%20cl%C3%A1sico&sig=1" alt="Corte clásico para caballeros" loading="lazy" style="width:100%;height:100%">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 50%);opacity:0;transition:opacity .3s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+          <p style="position:absolute;bottom:1rem;left:1rem;right:1rem;color:#fff;font-size:.875rem;font-weight:600">Corte clásico para caballeros</p>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:.875rem;overflow:hidden;aspect-ratio:4/3">
+        <img src="https://source.unsplash.com/800x600/?degradado%20fade&sig=2" alt="Degradado fade para un look moderno" loading="lazy" style="width:100%;height:100%">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 50%);opacity:0;transition:opacity .3s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+          <p style="position:absolute;bottom:1rem;left:1rem;right:1rem;color:#fff;font-size:.875rem;font-weight:600">Degradado fade para un look moderno</p>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:.875rem;overflow:hidden;aspect-ratio:4/3">
+        <img src="https://source.unsplash.com/800x600/?arreglo%20de%20barba&sig=3" alt="Arreglo de barba perfecto" loading="lazy" style="width:100%;height:100%">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 50%);opacity:0;transition:opacity .3s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+          <p style="position:absolute;bottom:1rem;left:1rem;right:1rem;color:#fff;font-size:.875rem;font-weight:600">Arreglo de barba perfecto</p>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:.875rem;overflow:hidden;aspect-ratio:4/3">
+        <img src="https://source.unsplash.com/800x600/?afeitado%20con%20navaja&sig=4" alt="Afeitado con navaja para una experiencia relajante" loading="lazy" style="width:100%;height:100%">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 50%);opacity:0;transition:opacity .3s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+          <p style="position:absolute;bottom:1rem;left:1rem;right:1rem;color:#fff;font-size:.875rem;font-weight:600">Afeitado con navaja para una experiencia relajante</p>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:.875rem;overflow:hidden;aspect-ratio:4/3">
+        <img src="https://source.unsplash.com/800x600/?barber%C3%ADa%20moderna&sig=5" alt="Nuestro equipo de barberos experimentados" loading="lazy" style="width:100%;height:100%">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 50%);opacity:0;transition:opacity .3s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+          <p style="position:absolute;bottom:1rem;left:1rem;right:1rem;color:#fff;font-size:.875rem;font-weight:600">Nuestro equipo de barberos experimentados</p>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:.875rem;overflow:hidden;aspect-ratio:4/3">
+        <img src="https://source.unsplash.com/800x600/?barberos%20experimentados&sig=6" alt="Nuestro local acogedor y moderno" loading="lazy" style="width:100%;height:100%">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 50%);opacity:0;transition:opacity .3s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+          <p style="position:absolute;bottom:1rem;left:1rem;right:1rem;color:#fff;font-size:.875rem;font-weight:600">Nuestro local acogedor y moderno</p>
+        </div>
+      </div>
+    </div>
+    <div class="tc" style="margin-top:2rem"><a href="gallery.html" class="btn btn-o">Ver galería completa</a></div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="sec" style="background:linear-gradient(135deg,#1a1a2e,rgba(26,26,46,.75));text-align:center">
+  <div class="wrap" style="max-width:680px">
+    <h2 style="font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;color:#fff;margin-bottom:1rem">
+      Reservar ahora
+    </h2>
+    <p style="color:rgba(255,255,255,.85);font-size:1.1rem;margin-bottom:2.5rem">No te pierdas la oportunidad de experimentar la mejor barbería en Quilmes. Reserva tu cita hoy mismo y descubre por qué somos la opción preferida de la comunidad.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="contact.html" class="btn btn-w">Reservar →</a>
+      <a href="https://wa.me/5491142501234" style="display:inline-flex;align-items:center;gap:.5rem;border:2px solid rgba(255,255,255,.6);color:#fff;padding:.875rem 2rem;border-radius:9999px;font-weight:700">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#0b1120;color:#94a3b8;padding:4.5rem 0 2rem">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07)">
+      <div>
+        <p style="font-size:1.3rem;font-weight:800;color:#1a1a2e;margin-bottom:.875rem">Barber�a El Navarrete</p>
+        <p style="font-size:.9rem;line-height:1.75;max-width:300px;margin-bottom:1.5rem">Barbería clásica y moderna en Quilmes</p>
+        <a href="https://wa.me/5491142501234" class="btn" style="background:#25D366;color:#fff;padding:.625rem 1.25rem;font-size:.875rem">💬 WhatsApp</a>
+      </div>
+      <div>
+        <p style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#475569;margin-bottom:1rem">Páginas</p>
+        <a href="index.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Inicio</a><a href="services.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Servicios</a><a href="gallery.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Galería</a><a href="about.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Nosotros</a><a href="faq.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">FAQ</a><a href="contact.html" style="display:block;color:#94a3b8;font-size:.875rem;margin-bottom:.5rem;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#94a3b8'">Contacto</a>
+      </div>
+      <div>
+        <p style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#475569;margin-bottom:1rem">Contacto</p>
+        <p style="font-size:.875rem;margin-bottom:.5rem">📞 +54 11 4250-1234</p>
+        <p style="font-size:.875rem;margin-bottom:.5rem">✉️ jus.dipietro@gmail.com</p>
+        <p style="font-size:.875rem">📍 Quilmes</p>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:1.5rem;font-size:.8rem">
+      <p>© 2026 Barber�a El Navarrete. Todos los derechos reservados.</p>
+      <p>Creado con IA por <a href="https://automaticialab.com" style="color:#1a1a2e">AUTOMATIC IA LAB</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script></body></html>
